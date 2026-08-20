@@ -1,3 +1,8 @@
+/**
+ * Data-access helpers for the `publishers` table.
+ * Returns publishers in summary form (id + name) for listings and filters,
+ * ordered by name so static builds are deterministic.
+ */
 import { asc } from 'drizzle-orm';
 import type { Database } from './db';
 import { publishers } from '../../db/schema';
